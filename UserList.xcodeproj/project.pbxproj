@@ -18,6 +18,13 @@
 		2FFB64282AC6D255007F2F80 /* UserListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB64272AC6D255007F2F80 /* UserListApp.swift */; };
 		2FFB642A2AC6D255007F2F80 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB64292AC6D255007F2F80 /* UserListView.swift */; };
 		2FFB642C2AC6D256007F2F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FFB642B2AC6D256007F2F80 /* Assets.xcassets */; };
+		5C8BB7082D0D22B00050D226 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8BB7072D0D22B00050D226 /* UserListViewModel.swift */; };
+		5C8BB70E2D0D34BA0050D226 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8BB70D2D0D34B90050D226 /* UserListViewModel.swift */; };
+		5C8BB7142D0DDC970050D226 /* UserListListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8BB7132D0DDC970050D226 /* UserListListView.swift */; };
+		5C8BB7162D0DDCA90050D226 /* UserListGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8BB7152D0DDCA90050D226 /* UserListGridView.swift */; };
+		5C8BB71C2D0DDD200050D226 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8BB71B2D0DDD200050D226 /* Toolbar.swift */; };
+		5C8BB71F2D0DDE4E0050D226 /* UserListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8BB71E2D0DDE4E0050D226 /* UserListDetailView.swift */; };
+		5C8BB7212D0DDEFD0050D226 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8BB7202D0DDEFD0050D226 /* UserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,13 @@
 		2FFB64292AC6D255007F2F80 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		2FFB642B2AC6D256007F2F80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FFB64342AC6D256007F2F80 /* UserListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C8BB7072D0D22B00050D226 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		5C8BB70D2D0D34B90050D226 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		5C8BB7132D0DDC970050D226 /* UserListListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListListView.swift; sourceTree = "<group>"; };
+		5C8BB7152D0DDCA90050D226 /* UserListGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListGridView.swift; sourceTree = "<group>"; };
+		5C8BB71B2D0DDD200050D226 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		5C8BB71E2D0DDE4E0050D226 /* UserListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListDetailView.swift; sourceTree = "<group>"; };
+		5C8BB7202D0DDEFD0050D226 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +84,11 @@
 			children = (
 				2FFB64272AC6D255007F2F80 /* UserListApp.swift */,
 				2FFB64292AC6D255007F2F80 /* UserListView.swift */,
-				2F804AE12ACC976300A46A03 /* UserDetailView.swift */,
+				5C8BB7132D0DDC970050D226 /* UserListListView.swift */,
+				5C8BB7152D0DDCA90050D226 /* UserListGridView.swift */,
+				5C8BB71E2D0DDE4E0050D226 /* UserListDetailView.swift */,
+				5C8BB71D2D0DDDC60050D226 /* Components */,
+				5C8BB71A2D0DDCFC0050D226 /* ViewModel */,
 				2FEF0C702ACB45E3004DB87C /* User.swift */,
 				2FEF0C6E2ACB416C004DB87C /* UserListResponse.swift */,
 				2FF9D91E2ACB3DD400F3A6C5 /* UserListRepository.swift */,
@@ -128,9 +146,28 @@
 			isa = PBXGroup;
 			children = (
 				2F015BA72ACC938F009A098C /* UserListRepositoryTests.swift */,
+				5C8BB70D2D0D34B90050D226 /* UserListViewModel.swift */,
 				2FB4823B2ACC98DD0016CBA7 /* UserList.xctestplan */,
 			);
 			path = UserListTests;
+			sourceTree = "<group>";
+		};
+		5C8BB71A2D0DDCFC0050D226 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5C8BB7072D0D22B00050D226 /* UserListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5C8BB71D2D0DDDC60050D226 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5C8BB71B2D0DDD200050D226 /* Toolbar.swift */,
+				2F804AE12ACC976300A46A03 /* UserDetailView.swift */,
+				5C8BB7202D0DDEFD0050D226 /* UserView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,11 +273,17 @@
 				2FF9D91D2ACB3D8800F3A6C5 /* HTTPMethod.swift in Sources */,
 				2FF9D91B2ACB3CE600F3A6C5 /* URLRequest.swift in Sources */,
 				2FFB642A2AC6D255007F2F80 /* UserListView.swift in Sources */,
+				5C8BB71C2D0DDD200050D226 /* Toolbar.swift in Sources */,
 				2FEF0C6F2ACB416C004DB87C /* UserListResponse.swift in Sources */,
+				5C8BB7082D0D22B00050D226 /* UserListViewModel.swift in Sources */,
+				5C8BB7142D0DDC970050D226 /* UserListListView.swift in Sources */,
 				2F804AE22ACC976300A46A03 /* UserDetailView.swift in Sources */,
+				5C8BB71F2D0DDE4E0050D226 /* UserListDetailView.swift in Sources */,
 				2FF9D91F2ACB3DD400F3A6C5 /* UserListRepository.swift in Sources */,
 				2FFB64282AC6D255007F2F80 /* UserListApp.swift in Sources */,
+				5C8BB7162D0DDCA90050D226 /* UserListGridView.swift in Sources */,
 				2FEF0C712ACB45E3004DB87C /* User.swift in Sources */,
+				5C8BB7212D0DDEFD0050D226 /* UserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F015BA82ACC938F009A098C /* UserListRepositoryTests.swift in Sources */,
+				5C8BB70E2D0D34BA0050D226 /* UserListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
